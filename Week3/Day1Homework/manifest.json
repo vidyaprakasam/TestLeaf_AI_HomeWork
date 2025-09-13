@@ -1,0 +1,50 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "manifest_version": 3,
+    "name": "AI Code Generator",
+    "version": "2.1",
+    "description": "Test automation code generator using Generative AI",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs",
+        "sidePanel"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_title": "genai",
+        "default_icon": {
+            "16": "assets/images/logo-small.png",
+            "32": "assets/images/logo-small.png",
+            "48": "assets/images/logo-small.png",
+            "128": "assets/images/logo-small.png"
+        }
+    },
+    "icons": {
+        "16": "assets/images/logo-small.png",
+        "32": "assets/images/logo-small.png",
+        "48": "assets/images/logo-small.png",
+        "128": "assets/images/logo-small.png"
+    },
+    "side_panel": {
+        "default_path": "panel.html"
+    },
+    "background": {
+        "service_worker": "bg.js"
+    },
+    "web_accessible_resources": [{
+        "resources": [
+            "lib/marked/marked.min.js",
+            "lib/prism/prism.js",
+            "lib/prism/prism-typescript.js",
+            "lib/prism/prism-tomorrow.css",
+            "src/content/content.js",
+            "lib/css/all.min.css"
+        ],
+        "matches": ["<all_urls>"]
+    }]
+}
