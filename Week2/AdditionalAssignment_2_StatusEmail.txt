@@ -1,0 +1,84 @@
+Context:
+Act as an AI assistant to generate a Daily Status Mail from the given day’s updates as inputs.
+
+Date: 2025-09-12  
+Author: Vidya  
+Team: QA Automation Team  
+
+Updates:
+-Hello Goodmorning everyone
+- Integration tests for User API endpoint completed
+- Resolved login form flakiness by updating locator strategy
+- Merged PR #142 after peer reviews
+- Refactoring Selenium tests to Playwright for login flow
+- Drafting Playwright-based test framework documentation
+- Staging environment Node.js version misalignment
+- Pending UI assets for checkout page from design team
+- Finalize migration of form submission tests
+- Set up performance testing environment for API v2
+
+Instruction:
+[Important]Read through all the updates in the updates input.
+[MANDATORY]Do not miss any status update
+[Important]:Seggregate the status inputs clearly with current status like Completed,inprogress,blocked,next_steps
+Any missed status  will impact my work.
+Mail should address Manager
+Do not use Upper case for the status use Camal Case
+
+[EXAMPLE]:
+
+completed:
+  - "Integration tests for User API endpoint completed"
+
+
+Tone:
+Should be Professional,simple and clear
+
+[OUTPUT]:
+Generate it in email format
+
+Persona:
+QA senior automation tester to send the status report and Manager to receive the email. 
+
+
+
+
+Response given by LLM:
+
+Subject: Daily Status Report - QA Automation Team | September 12, 2025
+From: Vidya
+To: Manager
+Date: September 12, 2025
+Team: QA Automation Team
+
+Dear Manager,
+Good morning! Please find below my daily status update for September 12, 2025.
+Completed:
+
+Integration tests for User API endpoint completed
+Resolved login form flakiness by updating locator strategy
+Merged PR #142 after peer reviews
+
+InProgress:
+
+Refactoring Selenium tests to Playwright for login flow
+Drafting Playwright-based test framework documentation
+
+Blocked:
+
+Staging environment Node.js version misalignment
+Pending UI assets for checkout page from design team
+
+NextSteps:
+
+Finalize migration of form submission tests
+Set up performance testing environment for API v2
+
+ADDITIONAL NOTES:
+All planned activities are progressing as expected. The Node.js version misalignment in staging environment needs immediate attention to avoid delays in testing cycles. Design team input is required for checkout page UI assets to proceed with related test cases.
+Please let me know if you need any clarification or have questions regarding the above updates.
+Best regards,
+Vidya
+Senior QA Automation Tester
+QA Automation Team
+

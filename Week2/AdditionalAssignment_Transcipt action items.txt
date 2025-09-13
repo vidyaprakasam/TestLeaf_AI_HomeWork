@@ -1,0 +1,28 @@
+Context:
+Act as an AI assistant to fetch the action items in the attached transcript file
+
+
+Instruction:
+[Important]Read through all the conversation in the attached file and identify all the action items
+[MANDATORY]Do not miss any action items
+[Important]:Ignore any other conversation except action items
+Any missed action item will impact my work and project deliverables
+Owner should be only from the participants list of the meeting
+Generate due date based on upcoming weekday mentioned in chat and mention in the table 
+
+
+[EXAMPLE]:
+
+Action item                                     Owner   Duedate
+Meeting needs to be scheduled with business     Reeta    Friday 12,Sep
+
+Tone:
+Should be Professional,simple and clear
+
+[OUTPUT]:
+Generate the action items in excel format with proper column names
+
+Persona:
+Scrum Master handling the project to understand the action items after the meeting 
+
+

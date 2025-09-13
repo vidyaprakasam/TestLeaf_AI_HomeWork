@@ -1,0 +1,62 @@
+00:00:00.000 --> 00:00:02.000
+Emma Patel: Hi everyone, Emma here.
+
+00:00:02.000 --> 00:00:04.000
+David Nguyen: Good morning! Coffee ready?
+
+00:00:04.000 --> 00:00:06.000
+Michael Lee: Volume check—can you hear me clearly?
+
+00:00:06.000 --> 00:00:09.000
+Host: Let’s give everyone a moment to join before we start.
+
+00:00:09.000 --> 00:00:10.000
+Anna Patel: Hi all, I’m here and ready.
+
+00:00:10.000 --> 00:00:11.000
+Raj Singh: Morning team, sorry I’m dialing in late due to traffic.
+
+00:00:11.000 --> 00:00:21.000
+John Doe: Good morning, everyone. Welcome to our Q3 planning meeting.
+
+00:00:21.000 --> 00:00:36.000
+Alice Johnson: Morning, John. I’ve updated the budget spreadsheet and shared it in the chat.
+
+00:00:36.000 --> 00:00:51.000
+Michael Lee: Thanks, Alice. I reviewed the numbers and we have a 10 percent increase in marketing allocation.
+
+00:00:51.000 --> 00:01:16.000
+Alice Johnson: That aligns with our growth targets. We need to finalize this by the end of the week. Alice will confirm final budget numbers and send them to finance by Friday.
+
+00:01:16.000 --> 00:01:31.000
+Sophie Chen: I’ll need those figures to update the project timeline.
+
+00:01:31.000 --> 00:01:56.000
+Michael Lee: On the campaign side, I’m working on a new social media outline. I’ll draft the outline and share it for feedback by Wednesday.
+
+00:01:56.000 --> 00:02:16.000
+John Doe: Perfect. Once we approve that, Sophie, please schedule a follow-up meeting and send the invites by the end of today.
+
+00:02:16.000 --> 00:02:26.000
+Sophie Chen: Will do.
+
+00:02:26.000 --> 00:02:40.000
+Carla Gomez: For the new partnership, I’ll reach out to the vendor and get pricing details by Thursday.
+
+00:02:40.000 --> 00:02:55.000
+David Nguyen: I’ll put together the slide deck for Q3 highlights and circulate a draft by Wednesday.
+
+00:02:55.000 --> 00:03:10.000
+Raj Singh: I’ll update the risk register with the latest budget figures by Friday.
+
+00:03:10.000 --> 00:03:25.000
+John Doe: Any other updates before we close?
+
+00:03:25.000 --> 00:03:30.000
+Alice Johnson: None from my side.
+
+00:03:30.000 --> 00:03:35.000
+Michael Lee: All good here.
+
+00:03:35.000 --> 00:03:40.000
+John Doe: Great. Thanks, everyone. Meeting adjourned.

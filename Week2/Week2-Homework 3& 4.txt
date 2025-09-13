@@ -1,0 +1,129 @@
+Homework Assignment 3 & 4:
+
+Generate test data for credit card applications for different types of cards and conditions
+
+Notes:
+
+- Use ICE POT framework
+- Integrate with API to validate the response
+
+Assignment 3:
+
+Context:
+Act as an Senior Tes engineer to Generate test data for credit card applications for different types of cards and conditions
+
+
+Instruction:
+[Important]Generate Test data for both valid and Invalid scenarios
+[MANDATORY]Test data should contain all the below attributes
+            Name,Card number,TypeofCard,Providername,CVV,Expirydate.CreditLimit,CreditScore
+[Important]:Testdata should not be biased
+Include some of the Testdata having expired card details
+[Important]Test data should be in excel format
+Provide minimum of 30 to maximum of 35 testdata
+Include different countries for both valid and Invalid test data
+
+[EXAMPLE]:
+
+Scenario                                 Name   creditcardnumber Typeofcard PRovidername CVV   Expirydate CreditLimit CreditScore
+Valid details to validate creditcard     Vidya  3498327998        Visa       SBI          123   09/28       100000        500
+
+[OUTPUT]:
+Generate the test data in excel format with proper column names
+
+
+
+	
+	Asssignment 4:
+	
+	
+	Note: For escaping string to be given in content: use the prompt Convert the below with escape character for json request to be given in postman
+	
+	Integrate with LLM 
+	
+	{
+  "model": "llama-3.3-70b-versatile",
+  "top_p": 0.95,
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "Context:\nAct as an Senior Test engineer to Generate test data for credit card applications for different types of cards and conditions\n\n\nInstruction:\n[Important]Generate Test data for both valid and Invalid scenarios\n[MANDATORY]Test data should contain all the below attributes\n            Name,Card number,TypeofCard,Providername,CVV,Expirydate.CreditLimit,CreditScore\n[Important]:Testdata should not be biased\nInclude some of the Testdata having expired card details\n[Important]Test data should be in excel format\nProvide minimum of 30 to maximum of 35 testdata\nInclude different countries for both valid and Invalid test data\n\n[EXAMPLE]:\n\nScenario                                 Name   creditcardnumber Typeofcard PRovidername CVV   Expirydate CreditLimit CreditScore\nValid details to validate creditcard     Vidya  3498327998        Visa       SBI          123   09/28       100000        500\n\n[OUTPUT]:\nGenerate the test data in excel format with proper column names"
+    }
+  ]
+}
+
+Response:
+
+{
+    {
+    "id": "chatcmpl-98a95f47-eed3-44d3-a727-e7950f36804f",
+    "object": "chat.completion",
+    "created": 1757402044,
+    "model": "llama-3.3-70b-versatile",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": " as described below \n\n|Scenario|Name|CreditcardNumber|Typeofcard|Providername|CVV|Expirydate|CreditLimit|CreditScore|\n|--------|----|---------------|-----------|------------|---|----------|------------|-----------|\n|Valid details to validate creditcard|Vidya | 3498327998  | Visa      | SBI         | 123  | 09/28     | 100000      | 500        |  \n \nPlease find below the test data in excel format as required:\n \n|Scenario|Name|CreditcardNumber|Typeofcard|Providername|CVV|Expirydate|CreditLimit|CreditScore|Country|\n|--------|----|---------------|-----------|------------|---|----------|------------|-----------|-------|\n|Valid details to validate creditcard|Vidya | 3498327998  | Visa      | SBI         | 123  | 09/28     | 100000      | 500        | India |\n|Valid details to validate creditcard|Emily | 6011514433  | Mastercard | Citibank    | 456  | 11/29     | 80000       | 600        | USA    |\n|Valid details to validate creditcard|David | 6771543321  | Amex       | American Express| 789  | 02/30     | 120000      | 700        | Canada |\n|Valid details to validate creditcard|Rahul | 3714496359  | Visa       | HDFC        | 234  | 05/31     | 90000       | 550        | India  |\n|Valid details to validate creditcard|Jack  | 6210798542  | Mastercard | ICICI       | 567  | 08/30     | 70000       | 650        | Australia|\n|Valid details to validate creditcard|Maria | 3056930419  | Amex       | Standard Chartered| 890  | 01/31     | 100000      | 450        | UK     |\n|Valid details to validate creditcard|Jen   | 4532019821  | Visa       | Axis        | 345  | 04/30     | 60000       | 580        | India  |\n|Valid details to validate creditcard|Robert| 6548743321  | Mastercard | Bank of Baroda| 678  | 07/30     | 85000       | 620        | USA    |\n|Valid details to validate creditcard|Kevin | 9821347590  | Amex       | RBL         | 901  | 06/30     | 95000       | 680        | Canada |\n|Valid details to validate creditcard|Sachin| 1236547890  | Visa       | Yes Bank     | 111  | 10/30     | 75000       | 590        | India  |\n|Valid details to validate creditcard|Saurav| 6543210987  | Mastercard | PNB         | 222  | 03/30     | 65000       | 630        | Australia|\n|Invalid details to validate creditcard|Vijay | 1234567890  | Visa       | Invalid     | 123  | 09/28     | 100000      | 500        | India  |\n|Invalid details to validate creditcard|Rohan | 9876543210  | Mastercard | Invalid     | 456  | 11/29     | 80000       | 600        | USA    |\n|Invalid details to validate creditcard|Pramod| 1111111111  | Amex       | Invalid     | 789  | 02/30     | 120000      | 700        | Canada |\n|Invalid details to validate creditcard|Vikram| 2222222222  | Visa       | Invalid     | 234  | 05/31     | 90000       | 550        | India  |\n|Invalid details to validate creditcard|Sudhir| 3333333333  | Mastercard | Invalid     | 567  | 08/30     | 70000       | 650        | Australia|\n|Invalid details to validate creditcard|Rahim | 4444444444  | Amex       | Invalid     | 890  | 01/31     | 100000      | 450        | UK     |\n|Invalid details to validate creditcard|Kumar | 5555555555  | Visa       | Invalid     | 345  | 04/30     | 60000       | 580        | India  |\n|Invalid details to validate creditcard|Javed | 6666666666  | Mastercard | Invalid     | 678  | 07/30     | 85000       | 620        | USA    |\n|Invalid details to validate creditcard|Amit  | 7777777777  | Amex       | Invalid     | 901  | 06/30     | 95000       | 680        | Canada |\n|Invalid details to validate creditcard|Rajesh| 8888888888  | Visa       | Invalid     | 111  | 10/30     | 75000       | 590        | India  |\n|Invalid details to validate creditcard|Naveen| 9999999999  | Mastercard | Invalid     | 222  | 03/30     | 65000       | 630        | Australia|\n|Expired card details                  |Vipul | 1234567890  | Visa       | SBI         | 123  | 01/20     | 100000      | 500        | India  |\n|Expired card details                  |Karan | 9876543210  | Mastercard | Citibank    | 456  | 02/19     | 80000       | 600        | USA    |\n|Expired card details                  |Yash  | 1111111111  | Amex       | American Express| 789  | 03/18     | 120000      | 700        | Canada |\n|Expired card details                  |Vikas | 2222222222  | Visa       | HDFC        | 234  | 04/17     | 90000       | 550        | India  |\n|Expired card details                  |Nitin | 3333333333  | Mastercard | ICICI       | 567  | 05/16     | 70000       | 650        | Australia|\n|Invalid credit limit                  |Gaurav| 4444444444  | Amex       | Standard Chartered| 890  | 09/28     | -100000     | 450        | UK     |\n|Invalid credit limit                  |Vineet| 5555555555  | Visa       | Axis        | 345  | 11/29     | 0           | 580        | India  |\n|Invalid credit limit                  |Varun | 6666666666  | Mastercard | Bank of Baroda| 678  | 02/30     | 1000000     | 620        | USA    |\n|Invalid credit limit                  |Abhishek| 7777777777  | Amex       | RBL         | 901  | 01/31     | -50000      | 680        | Canada |\n|Invalid credit score                  |Sandeep| 8888888888  | Visa       | Yes Bank     | 111  | 04/30     | 75000       | -1000      | India  |\n|Invalid credit score                  |Sunny  | 9999999999  | Mastercard | PNB         | 222  | 07/30     | 65000       | 1000       | Australia|\n|Invalid credit score                  |Rakesh | 1234567890  | Amex       | Invalid     | 123  | 10/30     | 100000      | 1000       | India  |"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "queue_time": 0.085203871,
+        "prompt_tokens": 241,
+        "prompt_time": 0.026247257,
+        "completion_tokens": 1743,
+        "completion_time": 4.012153775,
+        "total_tokens": 1984,
+        "total_time": 4.038401032
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3f3b593e33",
+    "x_groq": {
+        "id": "req_01k4pn61q1e7cs6eb8vsrvtk1p"
+    },
+    "service_tier": "on_demand"
+}
+	
+Formatted content:
+
+| Scenario                              | Name     | CreditcardNumber | Typeofcard | Providername         | CVV | Expirydate | CreditLimit | CreditScore | Country     |
+|---------------------------------------|----------|------------------|------------|-----------------------|-----|------------|-------------|-------------|-------------|
+| Valid details to validate creditcard  | Vidya    | 3498327998       | Visa       | SBI                   | 123 | 09/28      | 100000      | 500         | India       |
+| Valid details to validate creditcard  | Emily    | 6011514433       | Mastercard | Citibank              | 456 | 11/29      | 80000       | 600         | USA         |
+| Valid details to validate creditcard  | David    | 6771543321       | Amex       | American Express      | 789 | 02/30      | 120000      | 700         | Canada      |
+| Valid details to validate creditcard  | Rahul    | 3714496359       | Visa       | HDFC                  | 234 | 05/31      | 90000       | 550         | India       |
+| Valid details to validate creditcard  | Jack     | 6210798542       | Mastercard | ICICI                 | 567 | 08/30      | 70000       | 650         | Australia   |
+| Valid details to validate creditcard  | Maria    | 3056930419       | Amex       | Standard Chartered    | 890 | 01/31      | 100000      | 450         | UK          |
+| Valid details to validate creditcard  | Jen      | 4532019821       | Visa       | Axis                  | 345 | 04/30      | 60000       | 580         | India       |
+| Valid details to validate creditcard  | Robert   | 6548743321       | Mastercard | Bank of Baroda        | 678 | 07/30      | 85000       | 620         | USA         |
+| Valid details to validate creditcard  | Kevin    | 9821347590       | Amex       | RBL                   | 901 | 06/30      | 95000       | 680         | Canada      |
+| Valid details to validate creditcard  | Sachin   | 1236547890       | Visa       | Yes Bank              | 111 | 10/30      | 75000       | 590         | India       |
+| Valid details to validate creditcard  | Saurav   | 6543210987       | Mastercard | PNB                   | 222 | 03/30      | 65000       | 630         | Australia   |
+| Invalid details to validate creditcard| Vijay    | 1234567890       | Visa       | Invalid               | 123 | 09/28      | 100000      | 500         | India       |
+| Invalid details to validate creditcard| Rohan    | 9876543210       | Mastercard | Invalid               | 456 | 11/29      | 80000       | 600         | USA         |
+| Invalid details to validate creditcard| Pramod   | 1111111111       | Amex       | Invalid               | 789 | 02/30      | 120000      | 700         | Canada      |
+| Invalid details to validate creditcard| Vikram   | 2222222222       | Visa       | Invalid               | 234 | 05/31      | 90000       | 550         | India       |
+| Invalid details to validate creditcard| Sudhir   | 3333333333       | Mastercard | Invalid               | 567 | 08/30      | 70000       | 650         | Australia   |
+| Invalid details to validate creditcard| Rahim    | 4444444444       | Amex       | Invalid               | 890 | 01/31      | 100000      | 450         | UK          |
+| Invalid details to validate creditcard| Kumar    | 5555555555       | Visa       | Invalid               | 345 | 04/30      | 60000       | 580         | India       |
+| Invalid details to validate creditcard| Javed    | 6666666666       | Mastercard | Invalid               | 678 | 07/30      | 85000       | 620         | USA         |
+| Invalid details to validate creditcard| Amit     | 7777777777       | Amex       | Invalid               | 901 | 06/30      | 95000       | 680         | Canada      |
+| Invalid details to validate creditcard| Rajesh   | 8888888888       | Visa       | Invalid               | 111 | 10/30      | 75000       | 590         | India       |
+| Invalid details to validate creditcard| Naveen   | 9999999999       | Mastercard | Invalid               | 222 | 03/30      | 65000       | 630         | Australia   |
+| Expired card details                  | Vipul    | 1234567890       | Visa       | SBI                   | 123 | 01/20      | 100000      | 500         | India       |
+| Expired card details                  | Karan    | 9876543210       | Mastercard | Citibank              | 456 | 02/19      | 80000       | 600         | USA         |
+| Expired card details                  | Yash     | 1111111111       | Amex       | American Express      | 789 | 03/18      | 120000      | 700         | Canada      |
+| Expired card details                  | Vikas    | 2222222222       | Visa       | HDFC                  | 234 | 04/17      | 90000       | 550         | India       |
+| Expired card details                  | Nitin    | 3333333333       | Mastercard | ICICI                 | 567 | 05/16      | 70000       | 650         | Australia   |
+| Invalid credit limit                  | Gaurav   | 4444444444       | Amex       | Standard Chartered    | 890 | 09/28      | -100000     | 450         | UK          |
+| Invalid credit limit                  | Vineet   | 5555555555       | Visa       | Axis                  | 345 | 11/29      | 0           | 580         | India       |
+| Invalid credit limit                  | Varun    | 6666666666       | Mastercard | Bank of Baroda        | 678 | 02/30      | 1000000     | 620         | USA         |
+| Invalid credit limit                  | Abhishek | 7777777777       | Amex       | RBL                   | 901 | 01/31      | -50000      | 680         | Canada      |
+| Invalid credit score                  | Sandeep  | 8888888888       | Visa       | Yes Bank              | 111 | 04/30      | 75000       | -1000       | India       |
+| Invalid credit score                  | Sunny    | 9999999999       | Mastercard | PNB                   | 222 | 07/30      | 65000       | 1000        | Australia   |
+| Invalid credit score                  | Rakesh   | 1234567890       | Amex       | Invalid               | 123 | 10/30      | 100000      | 1000        | India       |
+			
