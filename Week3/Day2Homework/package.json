@@ -1,0 +1,17 @@
+{
+  "name": "user-story-to-tests",
+  "version": "1.0.0",
+  "description": "Full-stack application that converts user stories into test cases using LLM integration",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=backend\" \"npm run dev --workspace=frontend\"",
+    "typecheck": "npm run typecheck --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
